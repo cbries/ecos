@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.2</Version>
+    <Authors>Dr. Christian Benjamin Ries</Authors>
+    <Product>RailwayEssentials</Product>
+    <Copyright>Dr. Christian Benjamin Ries</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cbries/ecos</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cbries/ecos</RepositoryUrl>
+    <PackageTags>ECoS, Modellrailway, Remote Control, MFX, DCC, M4, Toolchain</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NDesk.Options" Version="0.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECoSCore\ECoSCore.csproj" />
+    <ProjectReference Include="..\ECoSEntities\ECoSEntities.csproj" />
+    <ProjectReference Include="..\ECoSUtils\ECoSUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SuperSocket.ClientEngine">
+      <HintPath>..\3rdparty\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\3rdparty\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="cfg.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

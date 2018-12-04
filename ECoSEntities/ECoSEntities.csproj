@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.2</Version>
+    <Authors>Dr. Christian Benjamin Ries</Authors>
+    <Company>Dr. Christian Benjamin Ries</Company>
+    <Product>RailwayEssentials</Product>
+    <Description>Library to handle ESU's ECoS 50200/50210' objects, e.g. locomotives, accessories, routes, s88, etc.</Description>
+    <Copyright>Dr. Christian Benjamin Ries</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>ECoS, Modellrailway, Remote Control, MFX, DCC, M4</PackageTags>
+    <PackageProjectUrl>https://github.com/cbries/ecos</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cbries/ecos</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECoSCore\ECoSCore.csproj" />
+    <ProjectReference Include="..\ECoSUtils\ECoSUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SuperSocket.ClientEngine">
+      <HintPath>..\3rdparty\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\3rdparty\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

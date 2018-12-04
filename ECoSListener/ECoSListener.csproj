@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECoSConnector\ECoSConnector.csproj" />
+    <ProjectReference Include="..\ECoSCore\ECoSCore.csproj" />
+    <ProjectReference Include="..\ECoSEntities\ECoSEntities.csproj" />
+    <ProjectReference Include="..\ECoSUtils\ECoSUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\.nuget\packages\log4net\2.0.8\lib\netstandard1.3\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.ClientEngine">
+      <HintPath>..\3rdparty\SuperSocket.ClientEngine.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Common">
+      <HintPath>..\3rdparty\SuperSocket.Common.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Dlr">
+      <HintPath>..\3rdparty\SuperSocket.Dlr.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.Facility">
+      <HintPath>..\3rdparty\SuperSocket.Facility.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.ProtoBase">
+      <HintPath>..\3rdparty\SuperSocket.ProtoBase.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketBase">
+      <HintPath>..\3rdparty\SuperSocket.SocketBase.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperSocket.SocketEngine">
+      <HintPath>..\3rdparty\SuperSocket.SocketEngine.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="SuperWebSocket">
+      <HintPath>..\3rdparty\SuperWebSocket.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\3rdparty\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

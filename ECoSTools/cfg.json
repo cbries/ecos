@@ -1,0 +1,13 @@
+﻿{
+	"host": "ws://127.0.0.1:10050",
+	"ignoreInit": [
+		{
+			"comment": "Segementdrehscheibe",
+			"oids": [ 1024, 1025, 1026, 1027, 1028 ]
+		},
+		{
+			"comment": "Enkupplungsgleise",
+			"oids": [ 69 ]
+		}
+	]
+}

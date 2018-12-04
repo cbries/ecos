@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.2</Version>
+    <Authors>Dr. Christian Benjamin Ries</Authors>
+    <Product>RailwayEssentials</Product>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <Description>Library of handling ESU's ECoS 50200/50210' communication protocol by providing parsing approaches to abstract any information bypassed between any client and the ECoS control unit.</Description>
+    <Copyright>Dr. Christian Benjamin Ries</Copyright>
+    <PackageProjectUrl>https://github.com/cbries/railwayessential</PackageProjectUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>ECoS, Modellrailway, Remote Control, MFX, DCC, M4</PackageTags>
+    <Company>Dr. Christian Benjamin Ries</Company>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+  </PropertyGroup>
+
+</Project>

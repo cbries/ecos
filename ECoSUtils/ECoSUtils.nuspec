@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ECoSUtils</id>
+    <version>$version$</version>
+    <title>ECoSUtils -- part of RailwayEssential</title>
+    <authors>Dr. Christian Benjamin Ries</authors>
+    <owners>Dr. Christian Benjamin Ries</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/cbries/ecos</projectUrl>
+    <iconUrl>https://www.nuget.org/Content/gallery/img/default-package-icon.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library of handling ESU's ECoS 50200/50210' communication protocol by providing parsing approaches to abstract any information bypassed between any client and the ECoS control unit.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Dr. Christian Benjamin Ries</copyright>
+    <tags>ECoS, Modellrailway, Remote Control, MFX, DCC, M4</tags>		
+		<dependencies>
+			<group targetFramework=".NETStandard2.0"/>
+		</dependencies>
+  </metadata>
+	<files>
+	  <file src="bin\Release\netstandard2.0\ECoSUtils.dll" target="lib\netstandard2.0"/>
+  </files>
+</package>
